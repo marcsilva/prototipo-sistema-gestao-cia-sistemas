@@ -932,13 +932,16 @@ body {
     position: relative;
   }
 
-  .data-view,
-  .data-view.active-view {
-    display: block;
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-  }
+  .data-view {
+  display: none;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.data-view.active-view {
+  display: block;
+}
 
   .topbar {
     align-items: center;
