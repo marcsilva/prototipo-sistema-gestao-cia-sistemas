@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cia Sistemas — Gestão</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <span>C</span>
+        </div>
+        <div>
+          <div class="brand-title">Cia Sistemas</div>
+          <div class="brand-subtitle">SaaS Gestão</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-title">Navegação</div>
+        <a href="#" class="nav-link active">
+          <span class="nav-icon">▦</span>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">◎</span>
+          <span>Clientes</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">▣</span>
+          <span>Parceiros</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">☰</span>
+          <span>Serviços/Contratos</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">◫</span>
+          <span>Financeiro</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">◌</span>
+          <span>Agenda</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">☏</span>
+          <span>Chamados</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">♢</span>
+          <span>Licenças</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">☼</span>
+          <span>Equipamentos</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">◍</span>
+          <span>Relatórios</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-icon">☉</span>
+          <span>Avaliação NPS</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="user-block">
+          <div class="avatar">CR</div>
+          <div>
+            <div class="user-name">Cia Admin</div>
+            <div class="user-role">Admin</div>
+          </div>
+        </div>
+        <button class="btn btn-dark btn-full">Sair</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <div class="page-eyebrow">Visão Geral</div>
+          <h1>Dashboard</h1>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-outline">Hoje</button>
+          <button class="btn btn-primary">+ Novo chamado</button>
+        </div>
+      </header>
+
+      <section class="kpis">
+        <article class="kpi-card highlight">
+          <div class="kpi-head">
+            <span class="kpi-title">Clientes ativos</span>
+            <span class="trend up">+12%</span>
+          </div>
+          <div class="kpi-value">386</div>
+          <div class="kpi-foot">de 400 clientes no portfólio</div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="kpi-head">
+            <span class="kpi-title">Receita prevista</span>
+            <span class="trend up">+R$ 8.4k</span>
+          </div>
+          <div class="kpi-value">R$ 126,5k</div>
+          <div class="kpi-foot">mês corrente</div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="kpi-head">
+            <span class="kpi-title">Chamados abertos</span>
+            <span class="trend warning">5 críticos</span>
+          </div>
+          <div class="kpi-value">18</div>
+          <div class="kpi-foot">3 sem técnico definido</div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="kpi-head">
+            <span class="kpi-title">Vencimentos</span>
+            <span class="trend danger">6 urgentes</span>
+          </div>
+          <div class="kpi-value">23</div>
+          <div class="kpi-foot">próximos 30 dias</div>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <section class="panel span-2">
+          <div class="panel-header">
+            <div>
+              <div class="panel-kicker">Operação</div>
+              <h2>Ativos por produto</h2>
+            </div>
+            <select class="select-small">
+              <option>Mês atual</option>
+              <option>Últimos 30 dias</option>
+              <option>2026</option>
+            </select>
+          </div>
+          <div class="chart-area">
+            <div class="bar-group">
+              <div class="bar-wrapper">
+                <div class="bar-label">SGBR</div>
+                <div class="bar-stack">
+                  <div class="bar-fill" style="height: 92%;"></div>
+                </div>
+                <div class="bar-value">142</div>
+              </div>
+
+              <div class="bar-wrapper">
+                <div class="bar-label">Linx</div>
+                <div class="bar-stack">
+                  <div class="bar-fill" style="height: 79%;"></div>
+                </div>
+                <div class="bar-value">105</div>
+              </div>
+
+              <div class="bar-wrapper">
+                <div class="bar-label">TEF</div>
+                <div class="bar-stack">
+                  <div class="bar-fill teal" style="height: 67%;"></div>
+                </div>
+                <div class="bar-value">89</div>
+              </div>
+
+              <div class="bar-wrapper">
+                <div class="bar-label">EDB</div>
+                <div class="bar-stack">
+                  <div class="bar-fill orange" style="height: 44%;"></div>
+                </div>
+                <div class="bar-value">55</div>
+              </div>
+
+              <div class="bar-wrapper">
+                <div class="bar-label">Mob</div>
+                <div class="bar-stack">
+                  <div class="bar-fill purple" style="height: 30%;"></div>
+                </div>
+                <div class="bar-value">34</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header compact">
+            <div>
+              <div class="panel-kicker">Qualidade</div>
+              <h2>NPS</h2>
+            </div>
+            <span class="pill success">+76</span>
+          </div>
+          <div class="nps-area">
+            <div class="nps-number">76</div>
+            <div class="nps-label">NPS atual</div>
+            <div class="mini-bars">
+              <span style="height: 20%;"></span>
+              <span style="height: 40%;"></span>
+              <span style="height: 30%;"></span>
+              <span style="height: 62%;"></span>
+              <span style="height: 52%;"></span>
+              <span style="height: 78%;"></span>
+              <span style="height: 62%;"></span>
+              <span style="height: 94%;"></span>
+            </div>
+            <div class="kpi-foot">6 avaliações pendentes</div>
+          </div>
+        </section>
+      </section>
+
+      <section class="content-grid two-cols">
+        <section class="panel">
+          <div class="panel-header compact">
+            <div>
+              <div class="panel-kicker">Financeiro</div>
+              <h2>Contas</h2>
+            </div>
+            <a class="text-link" href="#">Ver tudo</a>
+          </div>
+          <div class="list-block">
+            <div class="finance-row">
+              <div>
+                <div class="row-title">Receber — Douradense</div>
+                <div class="row-meta">Vencimento: 09 ago · R$ 2.450,00</div>
+              </div>
+              <span class="status paid">Pago</span>
+            </div>
+            <div class="finance-row">
+              <div>
+                <div class="row-title">Pagar — SGBR</div>
+                <div class="row-meta">Vencimento: 11 ago · R$ 987,00</div>
+              </div>
+              <span class="status warning-status">Pendente</span>
+            </div>
+            <div class="finance-row">
+              <div>
+                <div class="row-title">Receber — Hiper</div>
+                <div class="row-meta">Vencimento: 12 ago · R$ 1.102,00</div>
+              </div>
+              <span class="status late">Atrás</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header compact">
+            <div>
+              <div class="panel-kicker">Suporte</div>
+              <h2>Chamados recentes</h2>
+            </div>
+            <a class="text-link" href="#">Abrir</a>
+          </div>
+          <div class="list-block tickets">
+            <div class="ticket-row">
+              <div>
+                <div class="row-title">#CIS-2847 — CyberAtacado</div>
+                <div class="row-meta">Produto: SGBR · Status: Em análise</div>
+              </div>
+              <span class="status open">Aberto</span>
+            </div>
+            <div class="ticket-row">
+              <div>
+                <div class="row-title">#CIS-2846 — Loja Nova</div>
+                <div class="row-meta">Produto: Linx · Status: Resolvido</div>
+              </div>
+              <span class="status closed">Resolvido</span>
+            </div>
+            <div class="ticket-row">
+              <div>
+                <div class="row-title">#CIS-2845 — Natura Margem</div>
+                <div class="row-meta">Produto: TEF · Status: Pendente</div>
+              </div>
+              <span class="status pending">Pendente</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="panel table-panel">
+        <div class="panel-header compact">
+          <div>
+            <div class="panel-kicker">Portfólio</div>
+            <h2>Clientes em carteira</h2>
+          </div>
+          <button class="btn btn-primary btn-small">+ Cliente</button>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Produto</th>
+                <th>Responsável</th>
+                <th>Vencimento</th>
+                <th>Status</th>
+                <th>Financeiro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="table-client">Douradense</span></td>
+                <td>SGBR</td>
+                <td>José Alves</td>
+                <td>05/09/2026</td>
+                <td><span class="status paid">Ativo</span></td>
+                <td>R$ 2.450,00</td>
+              </tr>
+              <tr>
+                <td><span class="table-client">Loja Nova</span></td>
+                <td>Linx</td>
+                <td>Maria Silva</td>
+                <td>20/09/2026</td>
+                <td><span class="status open">Em análise</span></td>
+                <td>R$ 895,00</td>
+              </tr>
+              <tr>
+                <td><span class="table-client">Natura Margem</span></td>
+                <td>TEF</td>
+                <td>Ronaldo Lopes</td>
+                <td>12/08/2026</td>
+                <td><span class="status late">Próximo</span></td>
+                <td>R$ 1.100,00</td>
+              </tr>
+              <tr>
+                <td><span class="table-client">CyberAtacado</span></td>
+                <td>Hiper</td>
+                <td>Felipe Costa</td>
+                <td>14/10/2026</td>
+                <td><span class="status paid">Ativo</span></td>
+                <td>R$ 1.770,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="row-panels">
+        <section class="panel small-panel">
+          <div class="panel-header compact">
+            <div>
+              <div class="panel-kicker">Licenças</div>
+              <h2>Vencimentos</h2>
+            </div>
+            <span class="pill danger">3 próximos</span>
+          </div>
+          <div class="list-block compact-list">
+            <div class="row-line">
+              <span>Licença SGBR</span>
+              <strong>12 dias</strong>
+            </div>
+            <div class="row-line">
+              <span>TEF Gateway</span>
+              <strong>24 dias</strong>
+            </div>
+            <div class="row-line">
+              <span>Licença Linx</span>
+              <strong>43 dias</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel small-panel">
+          <div class="panel-header compact">
+            <div>
+              <div class="panel-kicker">Operação</div>
+              <h2>Agenda</h2>
+            </div>
+            <span class="pill">Hoje</span>
+          </div>
+          <div class="agenda-list">
+            <div class="agenda-item">
+              <span class="date-badge">08<br />AGO</span>
+              <div>
+                <div class="row-title">Visita técnica — Loja Nova</div>
+                <div class="row-meta">09:00 · Técnico: João</div>
+              </div>
+            </div>
+            <div class="agenda-item">
+              <span class="date-badge">09<br />AGO</span>
+              <div>
+                <div class="row-title">Reunião Financeira</div>
+                <div class="row-meta">14:30 · Cobrança</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel small-panel">
+          <div class="panel-header compact">
+            <div>
+              <div class="panel-kicker">Administrativo</div>
+              <h2>Alertas</h2>
+            </div>
+            <span class="pill warning">3</span>
+          </div>
+          <div class="alert-stack">
+            <div class="alert-row">
+              <span class="alert-dot"></span>
+              <span>Vencimento do contrato Hiper</span>
+            </div>
+            <div class="alert-row">
+              <span class="alert-dot"></span>
+              <span>Chamado sem avaliação</span>
+            </div>
+            <div class="alert-row">
+              <span class="alert-dot"></span>
+              <span>Arquivo anexado aguardando revisão</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
